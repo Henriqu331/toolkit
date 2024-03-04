@@ -79,5 +79,5 @@ jobs:
         run: |
           curl -X POST -H 'Content-type: application/json' --data '{"text":":dance: Successfully published a new version of ${{ github.event.inputs.package }}"}' $SLACK_WEBHOOK
         env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK }}q
 
